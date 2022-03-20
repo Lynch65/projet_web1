@@ -1,0 +1,44 @@
+ul {
+  list-style-type: none;
+}
+li:hover .A {
+  display: inline-block;
+
+  position: absolute;
+}
+.A,
+.B {
+  display: none;
+}
+li:hover .B {
+  display: inline-block;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+}
+.box2 {
+  border-left-style: ridge;
+  border-top-style: ridge;
+}
+.box1 {
+  border-top-style: ridge;
+  color: blue;
+}
+.box2 p {
+  margin-left: 100px;
+}
+.A li:hover {
+  background-color: pink;
+}
+.B li:hover {
+  background-color: pink;
+}
+
+li:not(.A li, .B li):hover {
+  background-color: rgb(235, 145, 160);
+}
+ul:not(.A, .B) {
+  padding: 0;
+}
